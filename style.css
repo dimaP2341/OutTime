@@ -1,0 +1,168 @@
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type='submit'] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+input[type='file'] {
+  max-width: 100%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.component {
+  width: 530px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: grey;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.timeline {
+  display: flex;
+  padding: 8px;
+  background-color: rgba(183, 247, 216, 0.856);
+  border-radius: 50px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.segment {
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.gap {
+  background-color: transparent;
+  min-width: 5px;
+}
+
+.visit {
+  background-color: rgb(60, 208, 163);
+  min-width: 24px;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  min-height: 24px;
+}
+
+.overlap {
+  width: -8px;
+}
