@@ -122,14 +122,12 @@ body {
 
 .component {
   width: 550px;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 .info {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 10px;
+  border-bottom: solid transparent 10px;
   font-size: 14px;
   color: grey;
   font-weight: 600;
@@ -139,11 +137,12 @@ body {
 .timeline {
   display: flex;
   width: 100%;
-  padding: 0;
   min-height: 36px;
   align-items: center;
   background-color: rgba(183, 247, 216, 0.856);
   border-radius: 50px;
+  white-space: -6px;
+  letter-spacing: -6px;
 }
 
 .segment {
@@ -166,20 +165,4 @@ body {
 .overlap {
   width: -8px;
   margin-right: -6px;
-}
-
-@media (max-width: 600px) {
-  .info {
-    font-size: 12px;
-  }
-
-  .timeline {
-    min-height: 32px;
-    /* padding: 6px; */
-  }
-
-  .visit {
-    min-width: 20px;
-    min-height: 20px;
-  }
 }
